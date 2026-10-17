@@ -33,6 +33,13 @@
       '<path d="M20 54h80M16 72h88M20 90h80M32 106h56M30 40h60"/>' +
       '<path d="M60 28c-22 12-22 76 0 88M60 28c22 12 22 76 0 88M60 28v88M42 32c-34 20-28 70 0 80M78 32c34 20 28 70 0 80"/>' +
       '<path d="M8 20l3 7 7 3-7 3-3 7-3-7-7-3 7-3zM108 100l2 5 5 2-5 2-2 5-2-5-5-2 5-2z" fill="#222" stroke="none"/></svg>',
+    gift: '<svg viewBox="0 0 120 120" fill="#f7f3ea" stroke="#222" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round">' +
+      '<path d="M22 60h76v47c0 2-1 3-3 3H25c-2 0-3-1-3-3z"/>' +
+      '<path d="M14 43c0-2 1-3 3-3h86c2 0 3 1 3 3v14c0 2-1 3-3 3H17c-2 0-3-1-3-3z"/>' +
+      '<path d="M54 40h12v70H54z" fill="#c4505c"/><path d="M22 72h76" stroke-width="1.4" stroke-dasharray="3 5"/>' +
+      '<g fill="none" stroke="#c4505c" stroke-width="3"><path d="M60 39C46 18 24 20 28 32c3 9 20 9 32 7z"/>' +
+      '<path d="M60 39c14-21 36-19 32-7-3 9-20 9-32 7z"/></g>' +
+      '<path d="M8 14l2 6 6 2-6 2-2 6-2-6-6-2 6-2zM110 6l2 5 5 2-5 2-2 5-2-5-5-2 5-2z" fill="#222" stroke="none"/></svg>',
     ring: '<svg viewBox="0 0 100 100" fill="none" stroke="#6a1a1a" stroke-width="1"><ellipse cx="50" cy="50" rx="44" ry="42"/>' +
       '<ellipse cx="51" cy="49" rx="41" ry="45" transform="rotate(25 50 50)"/><ellipse cx="49" cy="51" rx="46" ry="40" transform="rotate(-20 50 50)"/></svg>',
   };
@@ -129,6 +136,12 @@
     $('#rsvpDate').textContent = $('#dateLine').textContent + ', ' + cfg.timeNote;
     $('#rsvpYes').href = rsvpLink(cfg.rsvpYes);
     $('#rsvpNo').href = rsvpLink(cfg.rsvpNo);
+  }
+
+  // ---------- Вишлист ----------
+  if (cfg.wishlistUrl) {
+    $('#wish').hidden = false;
+    $('#wishLink').href = cfg.wishlistUrl;
   }
 
   // ---------- Музыка ----------

@@ -200,6 +200,24 @@ section { position: relative; overflow: hidden; }
 .rsvp-btns span { font-size: calc(var(--u) * 7); line-height: 1; }
 .rsvp-btns em { font-style: normal; font-weight: 600; }
 
+/* ---------- Вишлист ---------- */
+.wish { padding: calc(var(--u) * 16) 0 calc(var(--u) * 40); }
+.wish-card {
+  position: relative;
+  margin: 0 calc(var(--u) * 5);
+  padding: calc(var(--u) * 19) calc(var(--u) * 7) calc(var(--u) * 10);
+  background: #fff;
+  border: calc(var(--u) * 1.2) solid var(--dark-red);
+  border-radius: calc(var(--u) * 8);
+  box-shadow: 0 0 0 calc(var(--u) * 1) var(--bg), 0 0 0 calc(var(--u) * 1.5) var(--dark-red);
+  transform: rotate(-2.5deg);
+}
+.wish-card.reveal { transform: rotate(-2.5deg) translateY(24px); }
+.wish-card.reveal.in { transform: rotate(-2.5deg); }
+.wish-gift { width: calc(var(--u) * 30); left: 50%; top: calc(var(--u) * -15); transform: translateX(-50%) rotate(6deg); }
+.wish-title { font-family: 'Pacifico', 'Shantell Sans', cursive; font-weight: 400; font-size: calc(var(--u) * 10); letter-spacing: .02em; margin-bottom: calc(var(--u) * 5); }
+.wish .btn { margin-top: calc(var(--u) * 8); }
+
 /* ---------- История ---------- */
 .story { padding-bottom: calc(var(--u) * 30); }
 
